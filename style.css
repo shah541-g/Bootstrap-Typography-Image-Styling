@@ -1,0 +1,18 @@
+.custom-width{
+    width: 300px;
+}
+.hover-effect {
+    color: inherit; 
+  }
+
+.hover-effect:hover{
+    color: rgb(13,110,253);
+}
+.image{
+    max-width: 600px;
+}
+@media(max-width:580px){
+    .container{
+        margin-left: 12px;
+    }
+}

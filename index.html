@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Typography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container my-4">
+        <div class="row p-3 bg-success text-white">
+            <h1 class="text-center">Typography</h1>
+        </div>
+
+        <div class="row">
+            <h2 class="p-3 text-center fw-normal">Typography is all about <span class="fw-bold">Attributes related to text</span></h2>
+        </div>
+
+        <!-- Text Alignment -->
+
+        <div class="row">
+            <h3 class="fw-normal p-3 fw-bold">1) Text Alignment:</h3>
+            <p>Text alignment is moving text to <span class="fw-bold">start end or center</span></p>
+
+            <div class="px-0 bg-primary text-white fw-bold">
+                <p class="border bg-success border-black text-start borderborder-black">Start aligned text on all viewport sizes.</p>
+                <p class="border bg-danger border-black text-center">Center aligned text on all viewport sizes.</p>
+                <p class="border bg-warning text-black border-black text-end">End aligned text on all viewport sizes.</p>
+                <p class="border bg-secondary border-black text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+                <p class="border  bg-info text-black border-black text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+                <p class="border bg-dark border-black text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+                <p class="border bg-white text-black border-black text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+                <p class="border bg-success border-black text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+            </div>
+      
+
+        
+            <h3 class="p-3 fw-bold"><a href="./text-wrap.html" class="hover-effect" target="_blank">2) Text Wrapping (click me)</a></h3>
+            
+   
+
+        
+            <h3 class="p-3 fw-bold"><a href="./word-break.html" class="hover-effect" target="_blank">3) Word break (click me) </a></h3>
+            
+
+        
+            <h3 class="p-3 fw-bold">4) Text Transform</h3>
+            <p>Text Transform refers to
+                <ol class="fw-bold ms-3">
+                    <li>UpperCase</li>
+                    <li>LoweCase</li>
+                    <li>Capitalized</li>
+                </ol>
+                In Bootstrap you can achieve this functionality by using following utility classes
+                <ol class="fw-bold ms-3">
+                    <li>text-lowercase</li>
+                    <li>text-uppercase</li>
+                    <li>text-capitalize</li>
+                </ol>
+            </p>
+            <div class="bg-black text-white">
+                
+                <p class="text-lowercase">Lowercased text.</p>
+                <p class="text-uppercase">Uppercased text.</p>
+                <p class="text-capitalize">CapiTaliZed text.</p>
+            </div>
+       
+
+        
+            <h3 class="p-3 fw-bold">5) Font Size</h3>
+            <p>We have 6 heading tags in html, but sometimes we want to increase the font size not the line height and neither the font-weight, by using the bootstrap <span class="fw-bold">fs utility</span> you can just increase the font size without affecting line height or font-weight</p>
+            <div class="bg-danger text-white border border-black">
+                <p class="fs-1">.fs-1 text</p>
+                <p class="fs-2">.fs-2 text</p>
+                <p class="fs-3">.fs-3 text</p>
+                <p class="fs-4">.fs-4 text</p>
+                <p class="fs-5">.fs-5 text</p>
+                <p class="fs-6">.fs-6 text</p>
+            </div>
+        
+
+        
+            <h3 class="p-3 fw-bold">6) Font Weight</h3>
+            <p>font weight can be changed by using <span class="fw-bold">fw-* utility class, (where * can be bold, bolder, semibold, medium, light, lighter, normal)</span>, here are some examples</p>
+
+            <div class="bg-success text-white border border-black">
+                <p class="fw-bold">Bold text.</p>
+                <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+                <p class="fw-semibold">Semibold weight text.</p>
+                <p class="fw-medium">Medium weight text.</p>
+                <p class="fw-normal">Normal weight text.</p>
+                <p class="fw-light">Light weight text.</p>
+                <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+            </div>
+
+            <h3 class="p-3 fw-bold">7) Font style</h3>
+            <p>font style can be changed by using <span class="fw-bold">fst-* utility class, (where * can be italic or normal)</span>, here are some examples</p>
+
+            <div class="bg-primary text-white border border-black">
+                <p class="fst-italic">Italic text.</p>
+                <p class="fst-normal">Text with normal font style</p>
+            </div>
+
+            <h3 class="p-3 fw-bold">8) Line Height</h3>
+            <p>line height can be changed by using <span class="fw-bold">lh-* utility class, (where * can be 1, sm, base, lg)</span>, here are some examples</p>
+
+            <div class="bg-primary border border-black p-3">
+                <p class="lh-1 p-2 bg-success text-black border border-black"><span class="fw-bold">This is a lh-1 paragraph. </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt impedit adipisci sequi sed nobis, autem eveniet error, omnis, aliquam minus. Vero architecto nisi aspernatur quam, maxime suscipit distinctio! Quibusdam..</p>
+                <p class="lh-sm p-2 text-black  bg-danger border border-black"><span class="fw-bold">This is a lh-sm paragraph.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt impedit adipisci sequi sed nobis, autem eveniet error, omnis, aliquam minus. Vero architecto nisi aspernatur quam, maxime suscipit distinctio! Quibusdam..</p>
+                <p class="lh-base p-2 bg-warning text-black border border-black"><span class="fw-bold">This is a lh-base paragrap</span>h. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt impedit adipisci sequi sed nobis, autem eveniet error, omnis, aliquam minus. Vero architecto nisi aspernatur quam, maxime suscipit distinctio! Quibusdam..</p>
+                <p class="lh-lg text-white p-2 bg-dark border border-black"><span class="fw-bold">This is a lh-lg paragraph.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt impedit adipisci sequi sed nobis, autem eveniet error, omnis, aliquam minus. Vero architecto nisi aspernatur quam, maxime suscipit distinctio! Quibusdam..</p>
+            </div>
+            <p class="fw-bold">Remember: 
+                <ol class="fw-bold ms-3">
+                    <li>lh-1 = 1 line height</li>
+                    <li>lh-sm = 1.25 line height</li>
+                    <li>lh-base= 1.5 line height (default)</li>
+                    <li>lh-lg = 2 line height</li>
+                </ol>
+            </p>
+
+            <h3 class="p-3 fw-bold">9) Text Font Families</h3>
+            <p>Bootstrap does not provide utilities for font families, it just provide a single utility named <span class="fw-bold">font-monospace</span> for applying the monospace font family</p>
+
+            <p class="p-3 bg-black text-white font-monospace">This is in monospace</p>
+
+            <h3 class="p-3 fw-bold">10) Reference Tag</h3>
+            <p>Reference tag <span class="fw-bold">a</span> by default has a blue color because of link convention, if you want to remove this convention You can use <span class="fw-bold">text-reset utility</span></p>
+
+            <p class="text-secondary p-3 border border-black">
+                Secondary body text with a <a href="#" class="text-reset">reset link</a>.
+            </p>
+
+            <h3 class="p-3 fw-bold">11) Text Decoration</h3>
+            <p>Text decoration refers to underlining, lining through or no line property on the text</p>
+
+            <div class="bg-danger p-3 fw-bold text-white border border-black">
+    
+                <p class="text-decoration-underline bg-black p-2">text-decoration-underline</p>
+                <p class="text-decoration-line-through bg-success p-2 ">text-decoration-line-through</p>
+                <a href="#" class="text-decoration-none text-reset bg-primary p-2">text-decoration-none</a>
+
+            </div>
+
+            <h3 class="p-3 fw-bold">12) HTML Headings</h3>
+            <p>same <span class="fw-bold">h1-h6 headings</span> are applicable in bootstrap, but here you have 2 variants for this purpose, <span class="fw-bold">either use html tags, or add utility classes</span></p>
+
+            <h3 class="p-3 fw-bold">13) Display Headings</h3>
+            <p>Another heading style, with a larger font size, font weight and line height <span class="fw-bold">another variant of heading</span></p>
+
+            <div class="bg-primary border border-black p-3">
+                <h1 class="display-1 p-2 border border-black bg-success">Display 1</h1>
+                <h1 class="display-2 p-2 border border-black bg-danger">Display 2</h1>
+                <h1 class="display-3 p-2 border border-black bg-warning">Display 3</h1>
+                <h1 class="display-4 p-2 border border-black bg-dark text-white">Display 4</h1>
+                <h1 class="display-5 p-2 border border-black bg-secondary">Display 5</h1>
+                <h1 class="display-6 p-2 border border-black bg-white">Display 6</h1>
+            </div>
+
+            <h3 class="p-3 fw-bold">14) Lead and Small Text</h3>
+            <p><span class="fw-bold">Lead: </span> lead represents the important text or introductory paragraph <br>
+            <span class="fw-bold">Small:</span> represents the unimportant text, mainly ued for copyrights etc</p>
+
+            <div class="bg-primary p-3 border border-black">
+                <p class="lead p-2 bg-danger border border-black text-white">
+                    This is a lead paragraph. this is an important paragraph.
+                </p>
+                <p class="small p-2 bg-success border border-black text-white">
+                    This is a small paragraph. this is an unimportant paragraph.
+                </p>
+            </div>
+
+            <h3 class="p-3 fw-bold">15) Inline html Tags for text</h3>
+            <p>
+                <ol class="ms-3 fw-bold">
+                    <li>em: italic text</li>
+                    <li>del: perform same rule as of text-line-through utility class</li>
+                    <li>small: unimportant text</li>
+                    <li>strong: important text</li>
+                    <li>lead: important text</li>
+                    <li>s: perform same rule as of text-line-through utility class</li>
+                    <li>ins: perform same act as text-underline</li>
+                    <li>u: perform same act as text-underline</li>
+                </ol>
+                all of them have bootstrap utility classes: <br>
+                <ol class="ms-3 fw-bold">
+                    <li>em: fst-italic</li>
+                    <li>del: text-decoration-line-through</li>
+                    <li>small: small</li>
+                    <li>strong: fw-bold</li>
+                    <li>lead: lead</li>
+                    <li>s: text-decoration-line-through</li>
+                    <li>ins: text-decoration-underline</li>
+                    <li>u: text-decoration-underline</li>
+                </ol>
+            </p>
+
+            <h3 class="p-3 fw-bold">16) BlockQuote</h3>
+            <p>Blockquote means quoting a sentence, or a passage. main classes used in bootstrap for this purpose are: <span class="fw-bold">blockquote and blockquote-footer</span></p>
+
+            <figure class="p-3 bg-light border border-primary rounded">
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+           </figure>
+
+            <h3 class="p-3 fw-bold">17) list unstyled</h3>
+            <p>the bullets or the numbers shown alonside the list items can be removed by using <spa class="fw-bold">list-unstyled utility class</spa></p>
+
+            <ul class="list-unstyled bg-secondary fw-bold p-3 border border-black">
+                <li>This is a list.</li>
+                <li>It appears completely unstyled.</li>
+                <li>Structurally, it's still a list.</li>
+                <li>However, this style only applies to immediate child elements.</li>
+                <li>Nested lists:
+                  <ul>
+                    <li>are unaffected by this style</li>
+                    <li>will still show a bullet</li>
+                    <li>and have appropriate left margin</li>
+                  </ul>
+                </li>
+                <li>This may still come in handy in some situations.</li>
+           </ul>
+
+
+           <h3 class="p-3 fw-bold">18) Text Truncate</h3>
+           <p>Text Truncate property is used to show <span class="fw-bold">elipsis (...)</span> in place of text if the text is lengthy than the parent element. this is useful for the detail written for the products shown in form of cards</p>
+
+           
+            <div class="custom-width bg-warning p-2">
+            <p class="text-truncate mb-0">
+                This is a long paragraph of text that will be truncated with an ellipsis if it overflows the container's width.
+            </p>
+            </div>
+
+            <div class="row justify-content-end">
+                <h2 class="p-3">This was all about <span class="fw-bold">Typography. </span><span class="small text-secondary">Lets move toward <a href="./images.html" class="hover-effect" target="_blank">Bootstrap Images Section</a></span></h2>
+            </div>
+        
+
+
+
+        </div>
+        
+        
+
+
+    </div>
+    
+</body>
+</html>
